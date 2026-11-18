@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cccxckbviajeb"]
+
+[ext_resource type="Script" uid="uid://dynqnvy1k8lo3" path="res://Block Maze/block_maze.gd" id="1_7cg6p"]
+
+[node name="block_maze" type="Node2D" unique_id=60317440]
+script = ExtResource("1_7cg6p")
+
+[node name="Button" type="Button" parent="." unique_id=26691310]
+offset_right = 133.0
+offset_bottom = 31.0
+text = "Randomize map"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=661188656]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
